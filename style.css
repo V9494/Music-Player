@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("./images/blob-scene-haikei.svg");
+    background-size: cover;
+    position: relative;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: red; */
+    height: 100vh;
+    width: 100%;
+    min-width: 1284px;
+    gap: 2rem;
+    position: relative;
+}
+
+.right-side{
+    /* background-color: blue; */
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 108px 76px;
+    gap: 10px;
+}
+
+#SongName{
+    font-size: 5rem;
+  padding: 0px;
+  font-weight: 700;
+  color: #000000c7;
+  margin-left: 0px;
+  text-align: left;
+  word-spacing: -1rem;
+}
+
+#title{
+    font-size: 2rem;
+  font-weight: 700;
+  color: #3f0aff;
+}
+
+#singer{
+    font-size: 3rem;
+  padding: 0px;
+  font-weight: 700;
+  color: #032b5f;
+  margin-left: 0px;
+  text-align: left;
+  word-spacing: 0rem;
+}
+
+#Artist{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #090614ab;
+}
+
+.image{
+    position: absolute;
+    top: 17rem;
+    left: 38rem;
+    /* animation: rotatea 5s linear infinite; */
+    /* animation: stop 1s linear; */
+    filter: drop-shadow(-10px 10px 10px black);
+}
+
+
+.image img{
+    border-radius: 50%;
+  background-size: cover;
+  height: 17rem;
+  width: 100%;
+  
+}
+@keyframes  stop{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes  rotatea{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.left-box{
+    height: 60vh;
+    width: 50%;
+    /* background-color: green; */
+    padding: 5rem 6rem;
+    
+}
+
+.All-songs{
+    background-color: #443e3e30;
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: -10px 10px 60px black;
+}
+
+.left-box .All-songs .songs{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 14px;
+    gap: 2rem;
+    text-align: left;
+    cursor: pointer;
+  
+}
+
+.left-box .All-songs .songs:hover{
+    background-color: rgba(245, 222, 179, 0.512);
+    border-radius: 20px;
+}
+
+
+.left-box .All-songs .songs img{
+    height: 4rem;
+  border-radius: 11px;
+}
+
+#player{
+    background-color: #ffffff4f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 36rem;
+  left: 39rem;
+  width: 16%;
+  height: 9%;
+  gap: 2rem;
+  border-radius: 25px;
+}
+
+#backward{
+    cursor: pointer;
+}
+#play{
+    cursor: pointer;
+}
+#forward{
+    cursor: pointer;
+}
+
+#alert{
+    position: absolute;
+  top: 34.2rem;
+  left: 41.3rem;
+  width: 11%;
+  background: #e88585ab;
+  padding: 0.3rem 2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #000000e3;
+  box-shadow: -3px 1px 20px black;
+}
